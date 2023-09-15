@@ -49,10 +49,11 @@ const likeButtons = document.querySelectorAll(".likeButton");
 // Add a click event listener to each like button
 likeButtons.forEach(button => {
     button.addEventListener("click", function() {
-        // Change the button's background color to red when clicked
-        button.style.color = "#da087b";
+        // Toggle the 'liked' class to change the color
+        button.classList.toggle('liked');
     });
 });
+
 
 
 
